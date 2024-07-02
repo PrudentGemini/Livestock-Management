@@ -2,6 +2,7 @@
     /* ****    COLOR Properties *********** */
     --main-site-background-color:#e4e9f7;
     --side-bar_background-color:#fff;
+    --side-bar-header-background:#fff;
 
     --primary-color:#695cfe;
     --primary-light-color:#f6f5ff;
@@ -87,6 +88,15 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s all ease;
+}
+.page-parent-container .side-bar .side-bar-navs .active,
+.page-parent-container .side-bar .side-bar-navs .nav-item:hover{
+    background: #000;
+    color: var(--side-bar_background-color);
 }
 .page-parent-container .side-bar .side-bar-navs .nav-item span,
 .page-parent-container .side-bar .user-profile .user-ico span{
@@ -98,7 +108,7 @@
 }
 .page-parent-container .side-bar .user-profile{
     position: absolute;
-    bottom: 1rem;
+    bottom: 3.5rem;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -115,4 +125,104 @@
     text-align: left;
     padding-left: 2.5rem;
 }
-.page-parent-container .main-site-view{
+/* .page-parent-container .main-site-view{
+
+} */
+.page-parent-container .main-site-view .section-header{
+    width: 100%;
+    height: 60px;
+    background: var(--side-bar_background-color);
+    padding: 14px 40px;
+    display: flex;
+    align-items: center;
+
+}
+.page-parent-container .main-site-view .section-header h4{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+.page-parent-container .main-site-view .section-header h4 span{
+    font-size: 1.6rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;/* 
+    background: rgba(0, 0, 0, .6);
+    color: #fff; */
+}
+.page-parent-container .main-site-view .main-site-overview-section{
+    padding: 15px 25px;
+}
+p.section-heading{
+    font-weight: 600;
+    opacity: .8;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card-collections{
+    display: flex;
+    gap: 2.7rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card{
+    width: 280px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background: var(--side-bar_background-color);
+    border-radius: 10px;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card .card-ico{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card .card-ico span:first-child{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card .card-ico span:last-child{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--side-bar_background-color);
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    font-size: 1rem;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card .card-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card .card-info span.price{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-info .card .card-info p{
+    font-size: 1rem;
+    opacity: .8;
+}
+
+.page-parent-container .main-site-view .main-site-overview-section .livestock-statistical-data .stats{
+    width: 100%;
+    height: 400px;
+    background: var(--side-bar_background-color);
+}
