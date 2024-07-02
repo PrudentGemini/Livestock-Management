@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../resources/bull_head-Photoroom.png">
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+    <title>Livestock Management | Home</title>
+</head>
+<body>
+    <div class="page-parent-container" id="root-container">
+        <div class="side-bar" id="side-bar">
+            <header>
+                <span class="site-image">
+                    <img src="../resources/bull_head-Photoroom.png" alt="site-logo">
+                </span>
+                <div class="site-header-name">
+                    <h3>Livestock</h3>
+                    <span>Management</span>
+                </div>
+                <span class="material-symbols-outlined" id="toggle-btn">
+                    chevron_right
+                </span>
+            </header>
+            <nav class="side-bar-navs">
+                <div class="nav-item">
+                    <span class="material-symbols-outlined"> dashboard</span>
+                    <p>Overview</p>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-outlined"> monitoring
+                    </span>
+                    <p>Monitor Livestock</p>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-outlined"> frame_inspect</span>
+                    <p>Examine Livestock</p>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-outlined"> add_circle
+                    </span>
+                    <p>Add Livestock</p>
+                </div>
+                <div class="nav-item">
+                    <span class="material-symbols-outlined"> update
+                    </span>
+                    <p>Update Dataset</p>
+                </div>
+            </nav>
+            <div class="user-profile">
+                <div class="user-ico">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                    <p>Ahmed Aishat</p>
+                </div>
+                <a href="#">About Me</a>
+            </div>
+        </div>
+        <div class="main-site-view" id="main-sect">
+
+        </div>
+    </div>
+
+<script>
+    let collapser = document.getElementById("btn");
+    let root = document.getElementById('root-container');
+    /* let mainSection = document.getElementById("main-sect");
+    let sideBar = document.getElementById("side-bar"); */
+    collapser.addEventListener('click', ()=>{
+        root.style.gridTemplateColumns = '100px 1fr';
+    })
+</script>
+</body>
+</html>
