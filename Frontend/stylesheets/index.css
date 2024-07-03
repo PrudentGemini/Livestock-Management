@@ -17,8 +17,7 @@
     background: var(--main-site-background-color);
     display: grid;
     grid-template-columns: 220px 1fr;
-    height: 100%;
-    overflow: hidden;
+    min-height: 100%;
 }
 
 .page-parent-container .side-bar{
@@ -102,6 +101,17 @@
 .page-parent-container .side-bar .user-profile .user-ico span{
     font-size: 2rem;
 }
+.page-parent-container .side-bar .side-bar-navs .nav-item span.important{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    font-size: 1.8rem;
+}
 .page-parent-container .side-bar .side-bar-navs .nav-item p,
 .page-parent-container .side-bar .user-profile a{
     font-size: 1.1rem;
@@ -162,12 +172,12 @@ p.section-heading{
     font-weight: 600;
     opacity: .8;
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: .3rem;
     text-transform: capitalize;
 }
 .page-parent-container .main-site-view .main-site-overview-section .livestock-info .card-collections{
     display: flex;
-    gap: 2.7rem;
+    gap: 2rem;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 1rem;
@@ -223,6 +233,29 @@ p.section-heading{
 
 .page-parent-container .main-site-view .main-site-overview-section .livestock-statistical-data .stats{
     width: 100%;
-    height: 400px;
+    height: auto;
+    display: flex;
+    gap: 1.5rem;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-statistical-data .stats .chart2{
     background: var(--side-bar_background-color);
+    width: 400px;
+    height: auto
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-statistical-data .stats .chart2 table{
+    width: 100%;
+    height: 200px;
+    padding: 1rem .6rem;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-statistical-data .stats .chart2 table tbody{
+    width: 100%;
+    height: auto;
+}
+.page-parent-container .main-site-view .main-site-overview-section .livestock-statistical-data .stats .chart2 table tr{
+    width: 100%;
+    border-bottom: 2px solid #0002;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 2rem;
 }

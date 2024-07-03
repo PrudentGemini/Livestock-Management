@@ -10,6 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
+ -->    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Year', 'Sales', 'Expenses', 'Profit'],
+            ['2014', 1000, 400, 200],
+            ['2015', 1170, 460, 250],
+            ['2016', 660, 1120, 300],
+            ['2017', 1030, 540, 350]
+          ]);
+  
+          var options = {
+            chart: {
+              title: 'Company Performance',
+              subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            }
+          };
+  
+          var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+  
+          chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+      </script>
     <title>Livestock Management | Home</title>
 </head>
 <body>
@@ -37,12 +64,12 @@
                     </span>
                     <p>Monitor Livestock</p>
                 </div>
-                <div class="nav-item">
-                    <span class="material-symbols-outlined"> frame_inspect</span>
+                <div class="nav-item" id="classifier">
+                    <span class="material-symbols-outlined" > frame_inspect</span>
                     <p>Examine Livestock</p>
                 </div>
                 <div class="nav-item">
-                    <span class="material-symbols-outlined"> add_circle
+                    <span class="material-symbols-outlined important"> add
                     </span>
                     <p>Add Livestock</p>
                 </div>
@@ -144,20 +171,70 @@
                 <div class="livestock-statistical-data">
                     <p class="section-heading">Statistics</p>
                     <div class="stats">
-                        
+                        <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+                        <div class="chart2">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Quantity</th>
+                                        <th>Status</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>Total supplier</td>
+                                            <td>5</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total supplier</td>
+                                            <td>5</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total supplier</td>
+                                            <td>5</td>
+                                            <td>Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total supplier</td>
+                                            <td>5</td>
+                                            <td>Active</td>
+                                        </tr>
+                                    </tbody>
+                                </thead>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
     </div>
-
+    <div class="container" style="display: none;">
+        <h2>Enter Features</h2>
+        <form id="featureForm">
+            <div class="input-group">
+                <input type="text" id="feature1" name="feature1" placeholder="Feature 1" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="feature2" name="feature2" placeholder="Feature 2" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="feature3" name="feature3" placeholder="Feature 3" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="feature4" name="feature4" placeholder="Feature 4" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="note">Please ensure all fields are filled correctly.</div>
+    </div>
 <script>
-    let collapser = document.getElementById("btn");
-    let root = document.getElementById('root-container');
-    /* let mainSection = document.getElementById("main-sect");
-    let sideBar = document.getElementById("side-bar"); */
-    collapser.addEventListener('click', ()=>{
-        root.style.gridTemplateColumns = '100px 1fr';
+    let mainSectionView = document.getElementById("main-sect");
+    let mainSectionInitialElemenet = mainSectionView.innerHTML;
+    let classifier = document.getElementById('classifier');
+    classifier.addEventListener('click', ()=>{
+        mainSectionView.innerHTML = document.getElementsByClassName('container')[0].innerHTML;
     })
 </script>
 </body>

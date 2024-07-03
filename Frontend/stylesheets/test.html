@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature Input for Classification</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 350px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #2c3e50;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .input-group input:focus {
+            border-color: #2980b9;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .note {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Features</h2>
+        <form id="featureForm">
+            <div class="input-group">
+                <input type="text" id="feature1" name="feature1" placeholder="Feature 1" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="feature2" name="feature2" placeholder="Feature 2" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="feature3" name="feature3" placeholder="Feature 3" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="feature4" name="feature4" placeholder="Feature 4" required>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <div class="note">Please ensure all fields are filled correctly.</div>
+    </div>
+    <script>
+        document.getElementById('featureForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const feature1 = document.getElementById('feature1').value;
+            const feature2 = document.getElementById('feature2').value;
+            const feature3 = document.getElementById('feature3').value;
+            const feature4 = document.getElementById('feature4').value;
+
+            // Here you can handle the input data, e.g., send it to the backend for classification
+            console.log('Feature 1:', feature1);
+            console.log('Feature 2:', feature2);
+            console.log('Feature 3:', feature3);
+            console.log('Feature 4:', feature4);
+
+            // For demonstration purposes, just alert the values
+            alert(`Features submitted:\n1. ${feature1}\n2. ${feature2}\n3. ${feature3}\n4. ${feature4}`);
+        });
+    </script>
+</body>
+</html>
