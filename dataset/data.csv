@@ -88,6 +88,7 @@ chicken,loss of appetite,thirst,ruffled feathers,Closed eyes,Diarrhea,Yes
 cow,Fever,weakened legs,los of the ability to walk,Mammary glads,Fluif filled blisters,Yes
 cow,Fever,weakened legs,los of the ability to walk,Weight loss,Lameness,Yes
 cattle, abortion at the end of gestation,Fatigue,weak calves,Join pains,Swelling of internal organs,Yes
+mammal,swollen,red-colored ,hot udder,Milk getting out more watery,Milk getting out more thick,Yes
 Cattle,Fever,Distress,Trembling,Staggering,Convulsion,Yes
 Cattle,Fever,Animal become lame,Prostrat,Painfull Swalling,Lameness,Yes
 Cattle,Fever,Difficulty in breathing,Dribbling of saliva,Inability of Swalllon Feeding,Moist and painfull,Yes
@@ -383,6 +384,7 @@ Other Birds,Egg production stops,Broody behavior,loss of appetite,Weight loss,Co
 Fowl,nausea,vomiting,loss of appetite,experiencing changes in weight, pain and bloating,Yes
 Duck,burning ache or pain,vomiting,loss of appetite,experiencing changes in weight, pain and bloating,Yes
 Other Birds,Continuous loss of weight,Regurgitation of food,wheezing,Excessive food intake,Undigested seeds,Yes
+snake,loss of appetite,lathargy,abortion,gurgling sound,Depression,Yes
 horse,fever,mild colic,loss of tail tone,loss of appetite,depression,Yes
 horse,head tilt,lathargy,lathargy,urine dribbling,inability to rise,Yes
 horse,fever,loss of appetite,respiratory noise,Weight loss,depression,Yes
@@ -392,6 +394,7 @@ duck,loss of appetite,high body temperaure,lack of appetite,diarrhea,sudden deat
 donkey,sweating,dry or tacky gums,reduced appetite,lying down,dull ness,Yes
 donkey,outstretched neck,dull ness,inappetence,noisy breathing,coughing,Yes
 Donkey,weight loss,dull ness,inappetence,self-isolation,recumbency,Yes
+mules,weight loss,dull ness,muscles problem,self-isolation,recumbency,Yes
 Elephant,changed gait,dull ness,muscles problem,Pain,Pains,Yes
 Elephant,changed gait,dull ness,diffuse,difficulty diagnosis,Anemia,Yes
 Elephant,Difficulty in breathing,swelling problem,bleeding from wounds,frequent yawning,anorexia,Yes
@@ -402,8 +405,10 @@ Wapiti,wasting,stumbling,listlessness,drooling,urination problem,Yes
 Deer,wasting,stumbling,listlessness,drooling,urination problem,Yes
 Mule deer,wasting,stumbling,listlessness,drooling,urination problem,Yes
 Black-tailed deer,wasting,stumbling,listlessness,drooling,urination problem,Yes
+Sika deer,wasting,stumbling,listlessness,drooling,urination problem,Yes
 White-tailed deer,wasting,stumbling,listlessness,drooling,drooping ears,Yes
 Reindeer,wasting,stumbling,listlessness,drooling,drooping ears,Yes
+Moos,wasting,stumbling,Fever,drooling,drooping ears,Yes
 Tiger,feline infections,lymphosarcoma,difficulty breating,stomatitis,anaemia,Yes
 Deer,sudden death,high temperature,difficulty breating,Weight loss,trembling,Yes
 Cattle,sudden death,high temperature,difficulty breating,Aneamia,trembling,Yes
@@ -415,7 +420,10 @@ Goats,fever,loss of appetite,rapid pulse and heart rates,lameness in affected le
 Cattle,fever,loss of appetite,swollen teats,lameness in affected leg,depression,Yes
 Cattle,swelling,nasal discharge,drooling,tiredness,fever,Yes
 Sheep,eye discharges,nasal discharge,change their normal behaviour,high body temperature,lameness,Yes
+Dogs,stop eating,stop drinking,change their normal behaviour,Lameness,Pains,Yes
 Fox,stop eating,stop drinking,change their normal behaviour,Weight loss,Pains,Yes
+Wolves,stop eating,stop drinking,change their normal behaviour,Depression,Pains,Yes
+Hyaenas,stop eating,stop drinking,change their normal behaviour,diarrhea,Pains,Yes
 Duck,Fever,Diffulty Swallowing,Excessive drooling,Staggering,Seizures,Yes
 Duck,Fever,Diarrhea,Vomiting,Weight loss,Dehydration,Yes
 Duck,Fever,Diarrhea,Coughing,Tiredness,Pains,Yes

@@ -1,0 +1,35 @@
+
+/* css reset option for all and some default html elements */
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins',sans-serif;
+}
+body, html{
+    height: 100%; 
+    scroll-behavior: smooth; 
+}
+
+ul[role='list'], ol[role='list']{
+    list-style: none; 
+}
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+a:not([class]){
+    text-decoration-skip-ink: auto; 
+}
+a{
+    text-decoration: none;
+}
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
